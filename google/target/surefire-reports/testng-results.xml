@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="42803" started-at="2020-02-19T14:21:28Z" finished-at="2020-02-19T14:22:11Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="42803" started-at="2020-02-19T14:21:28Z" finished-at="2020-02-19T14:22:11Z">
+      <class name="com.google.testcases.GmailAccountCreation">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.google.testcases.GmailAccountCreation@13c78c0b]" name="setup" is-config="true" duration-ms="14493" started-at="2020-02-19T19:51:28Z" finished-at="2020-02-19T19:51:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="createaccount(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.google.testcases.GmailAccountCreation@13c78c0b]" name="createaccount" duration-ms="28218" started-at="2020-02-19T19:51:43Z" finished-at="2020-02-19T19:52:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ejaz]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ahamed]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[iejazmn]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Zaje_1234]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[7760482709]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'username is taken')]"}
+  (Session info: chrome=80.0.3987.106)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-TBUU579', ip: '192.168.0.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir11776_416649559}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52826}, acceptInsecureCerts=false, browserVersion=80.0.3987.106, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 2352c3daa85bc997730db2df825da3a6
+*** Element info: {Using=xpath, value=//div[contains(text(),'username is taken')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'username is taken')]"}
+  (Session info: chrome=80.0.3987.106)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-TBUU579', ip: '192.168.0.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir11776_416649559}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52826}, acceptInsecureCerts=false, browserVersion=80.0.3987.106, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 2352c3daa85bc997730db2df825da3a6
+*** Element info: {Using=xpath, value=//div[contains(text(),'username is taken')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at com.google.pages.gmailpage.basicdetails(gmailpage.java:51)
+	at com.google.testcases.GmailAccountCreation.createaccount(GmailAccountCreation.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createaccount -->
+      </class> <!-- com.google.testcases.GmailAccountCreation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

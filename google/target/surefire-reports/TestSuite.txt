@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 45.468 s <<< FAILURE! - in TestSuite
+com.google.testcases.GmailAccountCreation.createaccount  Time elapsed: 28.269 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'username is taken')]"}
+  (Session info: chrome=80.0.3987.106)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-TBUU579', ip: '192.168.0.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\Admin\AppData\Local\Temp\scoped_dir11776_416649559}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:52826}, acceptInsecureCerts=false, browserVersion=80.0.3987.106, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 2352c3daa85bc997730db2df825da3a6
+*** Element info: {Using=xpath, value=//div[contains(text(),'username is taken')]}
+	at com.google.testcases.GmailAccountCreation.createaccount(GmailAccountCreation.java:46)
+
