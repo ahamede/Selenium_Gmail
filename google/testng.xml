@@ -3,6 +3,7 @@
 <suite name="Suite">
 	<test name="Test">
 		<parameter name="Browser" value="chrome" />
+		
 		<parameter name="Url" value="https://gmail.com" />
 		<parameter name="Firstname" value="ejaz" />
 		<parameter name="Lastname" value="ahamed" />
