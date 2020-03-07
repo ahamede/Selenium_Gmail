@@ -77,26 +77,6 @@ public class Utility {
 
 	// *********************************************************************************
 
-	public static String CaptureScreenshot(WebDriver driver) {
-
-		String pathOfScreenShot = null;
-		try {
-			
-			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
-			time = getCurrentDateTime();
-
-			pathOfScreenShot = System.getProperty("user.dir") + "\\Screenshot\\Screenshot" + time + ".png";
-
-			Files.copy(scrFile, new File(pathOfScreenShot));
-
-		} catch (Exception e) {
-
-			System.out.println("Screenshot Failed "+e.getMessage());
-		}
-
-		return pathOfScreenShot;
-	}
 
 
 	
@@ -116,60 +96,5 @@ public class Utility {
 
 	// ********************************************************************************************************************************
 
-	
-
-	// ********************************************************************************************************************************
-	public static String getCurrentDateTime() {
-
-		Calendar cal = Calendar.getInstance();
-		timestamp = Integer.toString(cal.get(Calendar.DATE)) + Integer.toString(cal.get(Calendar.MONTH) + 1)
-				+ Integer.toString(cal.get(Calendar.YEAR)) + Integer.toString(cal.get(Calendar.HOUR))
-				+ Integer.toString(cal.get(Calendar.MINUTE)) + Integer.toString(cal.get(Calendar.SECOND));
-
-		return timestamp;
-	}
-	
-
-	public static String getCurrentDateTimeNew() {
-
-		DateFormat dateFormat = new SimpleDateFormat("MM_dd_yyyy_HH:mm:ss");
-		 //get current date time with Date()
-		 Date date = new Date();
-		 
-		 // Now format the date
-		 String date1= dateFormat.format(date);
-		 
-		 return date1;
-	}
-
-
-
-
-
-	public static void logFail(ExtentTest logger, String msg) {
-	
-		logger.log(LogStatus.FAIL, "====" + msg + "====");
-		System.out.println("====" + msg + "====");
-	}
-
-
-
-
-
-	public static void logInfo(ExtentTest logger, String msg) {
-	
-		logger.log(LogStatus.INFO, "====" + msg + "====");
-		System.out.println("====" + msg + "====");
-	}
-
-
-
-
-
-	public static void logPass(ExtentTest logger, String msg) {
-	
-		logger.log(LogStatus.PASS, "====" + msg + "====");
-		System.out.println("====" + msg + "====");
-	}
 
 }

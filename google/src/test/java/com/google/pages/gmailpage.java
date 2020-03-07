@@ -37,7 +37,7 @@ public class gmailpage
 		this.driver=driver;
 	}
 
-	public WebDriver basicdetails(ExtentTest logger,String firstname, String lastname, String username1, String password1) throws InterruptedException{
+	public WebDriver basicdetails(String firstname, String lastname, String username1, String password1) throws InterruptedException{
 
 		Helper.getElementByXpath(driver, create_account, 5).click();
 		Helper.getElementByXpath(driver, sel1, 5).click();
@@ -62,7 +62,7 @@ return driver;
 	By phone_number=By.xpath("//input[contains(@id,'phoneNumberId')]");
 	By verify=By.xpath("//span[contains(.,'Verify')]");
 	By code=By.id("code");
-	public WebDriver enter_phone_number(ExtentTest logger,String mobilenumber) throws InterruptedException{
+	public WebDriver enter_phone_number(String mobilenumber) throws InterruptedException{
 		Helper.getElementByXpath(driver, phone_number, 5).sendKeys(mobilenumber);
 		Thread.sleep(3000);
 		Helper.getElementByXpath(driver, next, 5).click();

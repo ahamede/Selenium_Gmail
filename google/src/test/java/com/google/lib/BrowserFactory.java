@@ -20,13 +20,11 @@ import org.testng.Reporter;
 
 public class BrowserFactory {
 
-	public static WebDriver driver;
+	static WebDriver driver;
 	
-	public BrowserFactory(WebDriver driver){
-		this.driver=driver;
-	}
 
-	public void startBrowser(String browser, String url) {
+
+	public static WebDriver startBrowser(String browser, String url) {
 		if (browser.equalsIgnoreCase("FireFox")) {
 			FirefoxProfile p = new FirefoxProfile();
 		
@@ -100,7 +98,7 @@ public class BrowserFactory {
 		}
 		driver.navigate().to(url);
 	    
-
+return driver;
 	}
 
 
