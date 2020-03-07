@@ -7,7 +7,7 @@
 		<parameter name="Firstname" value="ejaz" />
 		<parameter name="Lastname" value="ahamed" />
 		<parameter name="Username1" value="iejazmn" />
-		<parameter name="Password1" value="Zaje_1234" />
+		<parameter name="Password1" value="Zaje_12345" />
 		<parameter name="Mobilenumber" value="7760482709" />
 
 		<classes>
