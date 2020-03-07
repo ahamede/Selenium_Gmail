@@ -1,17 +1,10 @@
 package com.google.pages;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.google.lib.Helper;
-import com.google.lib.Utility;
-import com.relevantcodes.extentreports.ExtentTest;
 
 /**
  * Hello world!
@@ -20,7 +13,6 @@ import com.relevantcodes.extentreports.ExtentTest;
 public class gmailpage 
 {
 	public WebDriver driver;
-	public static ExtentTest logger;
 	
 	By create_account=By.xpath("//span[contains(.,'Create account')]");
 	By sel1=By.xpath("//span[contains(.,'For myself')]");
