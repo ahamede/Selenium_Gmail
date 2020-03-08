@@ -24,16 +24,16 @@ public class GmailAccountCreation {
 
 	// Initializing the setup
 	@BeforeTest
-	@Parameters({ "Browser", "Url" })
-	public static void setup(String browser, String url) {
-		driver = BrowserFactory.startBrowser(browser, url);
+	@Parameters({ "browser", "url1" })
+	public static void setup(String browser, String url1) {
+		driver = BrowserFactory.startBrowser(browser, url1);
 		report = new ExtentReports(System.getProperty("user.dir") + "\\ExtentReportResults.html");
 		logger = report.startTest("GmailAccountCreation");
 	
 	}
 
 	@Test
-	@Parameters({ "Firstname", "Lastname", "Username1", "Password1", "Mobilenumber" })
+	@Parameters({ "firstname", "lastname", "username1", "password1", "mobilenumber" })
 	public void createaccount(String firstname, String lastname, String username1, String password1,
 			String mobilenumber) throws Throwable {
 
