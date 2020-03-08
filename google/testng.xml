@@ -2,13 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<test name="Test">
-<!-- 		<parameter name="browser" value="Chrome" />		
+		<parameter name="browser" value="Chrome" />		
 		<parameter name="url1" value="https://gmail.com" />
 		<parameter name="firstname" value="ejaz" />
 		<parameter name="lastname" value="ahamed" />
 		<parameter name="username1" value="iejazmn" />
 		<parameter name="password1" value="Zaje_12345" />
-		<parameter name="mobilenumber" value="7760482709" /> -->
+		<parameter name="mobilenumber" value="7760482709" />
 
 
 
