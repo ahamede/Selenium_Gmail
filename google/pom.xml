@@ -71,14 +71,10 @@
 					</suiteXmlFiles>
 
 					<systemPropertyVariables>
-<!-- 						<browserr>${browser}</browser> <url>${url}</url> 
-							<flp.Protocol2>${Protocol2}</flp.Protocol2> <flp.Host>${Host}</flp.Host> 
-							<flp.Host_wd>${Host_wd}</flp.Host_wd> <flp.Port>${Port}</flp.Port> <flp.Port_wd>${Port_wd}</flp.Port_wd> 
-							<flp.Suffix>${Suffix}</flp.Suffix> <flp.fesSuffix>${fesSuffix}</flp.fesSuffix> 
-							<flp.User>${User}</flp.User> <flp.flpSuffix>${flpSuffix}</flp.flpSuffix> 
-							<flp.nwaSuffix>${nwaSuffix}</flp.nwaSuffix> <flp.fesUser>${fesUser}</flp.fesUser> <flp.flpUser>${flpUser}</flp.flpUser> 
-							<flp.flpPassword>${flpPassword}</flp.flpPassword> <flp.fesPassword>${fesPassword}</flp.fesPassword> 
-							<flp.Password>${Password}</flp.Password> -->
+						<browser> ${Browser} </browser> <url>${Url}</url> 
+							<firstname>${Firstname}</firstname> <lastname>${Lastname}</lastname> 
+							<Username>${Username1}</Username> <Password>${Password1}</Password>
+							 <mobilenumber>${Mobilenumber}</mobilenumber> 
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
