@@ -72,10 +72,10 @@
 
 
 					<systemPropertyVariables>
-						<browser> ${browser} </browser> <url1>${url1}</url1> 
+<!-- 						<browser> ${browser} </browser> <url1>${url1}</url1> 
 							<firstname>${firstname}</firstname> <lastname>${Lastname}</lastname> 
 							<username1>${username1}</username1> <password1>${password1}</password1>
-							 <mobilenumber>${mobilenumber}</mobilenumber> 
+							 <mobilenumber>${mobilenumber}</mobilenumber>  -->
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
