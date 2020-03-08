@@ -70,8 +70,9 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
+
 					<systemPropertyVariables>
-						<browser> ${browser} </browser> <g.url>${url1}</g.url> 
+						<browser> ${browser} </browser> <url1>${url1}</url1> 
 							<firstname>${firstname}</firstname> <lastname>${Lastname}</lastname> 
 							<username1>${username1}</username1> <password1>${password1}</password1>
 							 <mobilenumber>${mobilenumber}</mobilenumber> 
