@@ -71,10 +71,10 @@
 					</suiteXmlFiles>
 
 					<systemPropertyVariables>
-						<g.browser> ${Browser} </g.browser> <g.url>${Url}</g.url> 
-							<Firstname>${Firstname}</Firstname> <Lastname>${Lastname}</Lastname> 
-							<Username1>${Username1}</Username1> <Password1>${Password1}</Password1>
-							 <Mobilenumber>${Mobilenumber}</Mobilenumber> 
+						<browser> ${browser} </browser> <g.url>${url1}</g.url> 
+							<firstname>${firstname}</firstname> <lastname>${Lastname}</lastname> 
+							<username1>${username1}</username1> <password1>${password1}</password1>
+							 <mobilenumber>${mobilenumber}</mobilenumber> 
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
