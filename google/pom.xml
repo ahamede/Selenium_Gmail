@@ -71,7 +71,7 @@
 					</suiteXmlFiles>
 
 					<systemPropertyVariables>
-						<browser> ${Browser} </browser> <url>${Url}</url> 
+						<g.browser> ${Browser} </g.browser> <g.url>${Url}</g.url> 
 							<Firstname>${Firstname}</Firstname> <Lastname>${Lastname}</Lastname> 
 							<Username1>${Username1}</Username1> <Password1>${Password1}</Password1>
 							 <Mobilenumber>${Mobilenumber}</Mobilenumber> 
