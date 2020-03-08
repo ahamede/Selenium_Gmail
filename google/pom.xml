@@ -73,7 +73,7 @@
 					<systemPropertyVariables>
 						<browser> ${Browser} </browser> <url>${Url}</url> 
 							<Firstname>${Firstname}</Firstname> <Lastname>${Lastname}</Lastname> 
-							<Username>${Username1}</Username> <Password>${Password1}</Password>
+							<Username1>${Username1}</Username1> <Password1>${Password1}</Password1>
 							 <mobilenumber>${Mobilenumber}</mobilenumber> 
 					</systemPropertyVariables>
 				</configuration>
