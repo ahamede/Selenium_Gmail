@@ -25,9 +25,10 @@ public class GmailAccountCreation {
 	@BeforeMethod
 	@Parameters({ "Browser", "Url" })
 	public static void setup(String browser, String url) {
-		driver = BrowserFactory.startBrowser(browser, url);
+		
 		report = new ExtentReports(System.getProperty("user.dir") + "\\ExtentReportResults.html");
 		logger = report.startTest("GmailAccountCreation");
+		driver = BrowserFactory.startBrowser(browser, url);
 	}
 
 	@Test
