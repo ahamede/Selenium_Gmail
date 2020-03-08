@@ -74,7 +74,7 @@
 						<browser> ${Browser} </browser> <url>${Url}</url> 
 							<Firstname>${Firstname}</Firstname> <Lastname>${Lastname}</Lastname> 
 							<Username1>${Username1}</Username1> <Password1>${Password1}</Password1>
-							 <mobilenumber>${Mobilenumber}</mobilenumber> 
+							 <Mobilenumber>${Mobilenumber}</Mobilenumber> 
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
