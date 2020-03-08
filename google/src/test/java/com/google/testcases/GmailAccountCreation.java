@@ -51,7 +51,7 @@ public class GmailAccountCreation {
 	public void tearDownReport() {
 		driver.quit();
 		report.endTest(logger);
-
+report.flush();
 	}
 
 }
