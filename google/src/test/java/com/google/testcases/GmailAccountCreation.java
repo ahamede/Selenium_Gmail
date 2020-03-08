@@ -17,30 +17,33 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class GmailAccountCreation {
 
-	 static WebDriver driver;
-     public static ExtentTest logger;
-     public static ExtentReports report;
-      
+	static WebDriver driver;
+	public static ExtentTest logger;
+	public static ExtentReports report;
 
-
+	// Initializing the setup
 	@BeforeMethod
-	@Parameters({ "Browser" , "Url"})
+	@Parameters({ "Browser", "Url" })
 	public static void setup(String browser, String url) {
-        driver=BrowserFactory.startBrowser(browser, url);
-        report = new ExtentReports(System.getProperty("user.dir")+"\\ExtentReportResults.html");
-        logger = report.startTest("GmailAccountCreation");
+		driver = BrowserFactory.startBrowser(browser, url);
+		report = new ExtentReports(System.getProperty("user.dir") + "\\ExtentReportResults.html");
+		logger = report.startTest("GmailAccountCreation");
 	}
 
 	@Test
-	@Parameters({"Firstname" , "Lastname" , "Username1" , "Password1" , "Mobilenumber" })	
-	public void createaccount(String firstname, String lastname, String username1, String password1, String mobilenumber)  throws Throwable {
+	@Parameters({ "Firstname", "Lastname", "Username1", "Password1", "Mobilenumber" })
+	public void createaccount(String firstname, String lastname, String username1, String password1,
+			String mobilenumber) throws Throwable {
 
 		gmailpage g = PageFactory.initElements(driver, gmailpage.class);
-		g.basicdetails(firstname, lastname, username1, password1);
-		g.enter_phone_number(mobilenumber);
-        logger.log(LogStatus.INFO, "Account Created Successfully");
-	}
 
+		// Enter the basic details
+		g.basicdetails(firstname, lastname, username1, password1);
+
+		// Enter phone number
+		g.enter_phone_number(mobilenumber);
+		logger.log(LogStatus.INFO, "Account Created Successfully");
+	}
 
 	@AfterMethod
 	public void tearDownReport() {
@@ -48,8 +51,5 @@ public class GmailAccountCreation {
 		report.endTest(logger);
 
 	}
-
-
-
 
 }
