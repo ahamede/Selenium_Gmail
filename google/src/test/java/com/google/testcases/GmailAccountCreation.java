@@ -42,8 +42,8 @@ public class GmailAccountCreation {
 
 		// Enter phone number
 		g.enter_phone_number(mobilenumber);
-	
-		logger.log(LogStatus.FAIL, Utility.getScreenshot(driver)+"Test Failed");
+	    Utility.getScreenshot(driver)
+		logger.log(LogStatus.FAIL, "Test Failed");
 	}
 
 	@AfterTest
