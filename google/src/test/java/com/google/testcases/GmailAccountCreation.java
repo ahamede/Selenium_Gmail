@@ -42,7 +42,7 @@ public class GmailAccountCreation {
 
 		// Enter phone number
 		g.enter_phone_number(mobilenumber);
-	    Utility.getScreenshot(driver)
+	    Utility.getScreenshot(driver);
 		logger.log(LogStatus.FAIL, "Test Failed");
 	}
 
